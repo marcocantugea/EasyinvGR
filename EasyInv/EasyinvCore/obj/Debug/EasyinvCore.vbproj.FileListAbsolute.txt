@@ -1,10 +1,10 @@
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\bin\Debug\EasyinvCore.dll
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\bin\Debug\EasyinvCore.pdb
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\bin\Debug\EasyinvCore.xml
+C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\bin\Debug\MessagingToolkit.QRCode.dll
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\obj\Debug\EasyinvCore.Resources.resources
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\obj\Debug\EasyinvCore.vbproj.GenerateResource.Cache
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\obj\Debug\EasyinvCore.dll
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\obj\Debug\EasyinvCore.xml
 C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\obj\Debug\EasyinvCore.pdb
-C:\Documents and Settings\Administrator\Desktop\EasyInv\EasyInv\EasyinvCore\bin\Debug\MessagingToolkit.QRCode.dll

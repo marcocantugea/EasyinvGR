@@ -46,7 +46,7 @@
         </asp:BoundField>
         <asp:TemplateField>
             <ItemTemplate>
-                <input type="text" value="<%# getValue(Eval("STOCKUNITID"))  %>" id="txtval_<%# Eval("STOCKUNITID") %>_<%# Eval("CODE")  %>" class="TextChechInv" />
+                <input type="tel" value="<%# getValue(Eval("STOCKUNITID"))  %>" id="txtval_<%# Eval("STOCKUNITID") %>_<%# Eval("CODE")  %>" class="TextChechInv" />
                
             </ItemTemplate>
         </asp:TemplateField>
