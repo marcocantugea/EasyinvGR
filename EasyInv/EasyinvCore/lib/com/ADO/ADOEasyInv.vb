@@ -444,5 +444,49 @@ Namespace com.ADO
             End Try
         End Sub
 
+        Public Sub SearchStockTypePN(ByVal SearchText As String, ByVal result As StockTypeCollection)
+            Try
+                OpenDB("DB-AMOSBRIGE")
+                Dim query As String
+                query = "select * from q_maincatalogparts where makerref like '%" & SearchText & "%'"
+                connection.Command = New OleDb.OleDbCommand(query, connection.Connection)
+                connection.Adap = New OleDb.OleDbDataAdapter(connection.Command)
+                Dim dts As New DataSet
+                connection.Adap.Fill(dts)
+                If dts.Tables.Count > 0 Then
+                    If dts.Tables(0).Rows.Count > 0 Then
+                        For Each row As DataRow In dts.Tables(0).Rows
+                            Dim o_stocktype As New stocktype
+                            For Each member In o_stocktype.GetType.GetProperties
+                                If member.CanWrite Then
+                                    If member.PropertyType.Name = "String" Or member.PropertyType.Name = "Int32" Or member.PropertyType.Name = "Int64" Or member.PropertyType.Name = "DateTime" Or member.PropertyType.Name = "Boolean" Then
+                                        If Not IsDBNull(row(member.Name)) Then
+                                            If member.PropertyType.Name = "String" Then
+                                                member.SetValue(o_stocktype, row(member.Name).ToString, Nothing)
+                                            End If
+                                            If member.PropertyType.Name = "Int32" Then
+                                                member.SetValue(o_stocktype, Integer.Parse(row(member.Name)), Nothing)
+                                            End If
+                                            If member.PropertyType.Name = "Int64" Then
+                                                member.SetValue(o_stocktype, Long.Parse(row(member.Name)), Nothing)
+                                            End If
+                                            If member.PropertyType.Name = "DateTime" Then
+                                                member.SetValue(o_stocktype, row(member.Name), Nothing)
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            Next
+                            result.Add(o_stocktype)
+                        Next
+                    End If
+                End If
+            Catch ex As Exception
+                Throw
+            Finally
+                CloseDB()
+            End Try
+        End Sub
+
     End Class
 End Namespace

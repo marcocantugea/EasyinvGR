@@ -32,13 +32,14 @@ Partial Class modules_services_photouploader
                             tmpobj.STOCKUNITID = item.STOCKUNITID
                             _DataSource.Add(tmpobj)
                             index += 1
+                            totphotos += 1
                         Next
                     End If
                 Catch ex As Exception
                     Console.WriteLine(ex.Message.ToString)
                 End Try
 
-                totphotos += 1
+
             Next
 
 

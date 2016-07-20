@@ -12,7 +12,7 @@
         AutoGenerateColumns="False">
     <Columns>
         <asp:BoundField DataField="STOCKTYPECODE" HeaderText="Stock Type Code" />
-        <asp:BoundField DataField="NAME" HeaderText="Name" />
+        <asp:BoundField DataField="PNAME" HeaderText="Name" />
         <asp:BoundField DataField="STOCKTYPEID" Visible="False" />
         <asp:BoundField DataField="STOCKUNITID" HeaderText="Stock ID" />
         <asp:BoundField DataField="GetStock"  HeaderText="on Hand" >
