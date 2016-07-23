@@ -16,6 +16,10 @@
     <div>
         <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
 &nbsp;<asp:Button ID="btnSearch" runat="server" Text="Search" />
+        <br />
+        <br />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="true">
+        </asp:GridView>
     </div>
     </form>
     <script src="js/jquery-3.0.0.min.js"></script>
